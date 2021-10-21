@@ -21,7 +21,7 @@ class Task
   def gets_day_with_max_light
     answer = data_daily_light(@data)
     daylight_minutes, days = answer[:daylight_minutes], answer[:days]
-    "The longest days: #{Convertor.many_date_from_unix(days)}. Duration: #{daylight_minutes}"
+    "Самые длинные дни: #{Convertor.many_date_from_unix(days)}. Длительность: #{daylight_minutes.round(2)} минут"
   end
 end
 
