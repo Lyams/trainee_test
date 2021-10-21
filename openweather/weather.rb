@@ -11,7 +11,7 @@ class Task
     @data = RequestWeather.gets_data
   end
 
-  def gets_day_with_max_diff_feeling_from_real_in_night
+  def gets_day_with_min_diff_feeling_from_real_in_night
         answer = data_daily_dif_tempeture(@data)
     days, diff_tempeture = answer[:days], answer[:diff_tempeture]
     "#{Convertor.many_date_from_unix(days)} числа разница между ночной температурой и её ощущением будет минимальна в ближайщие 5 дней: #{diff_tempeture} градуса по Цельсию"
@@ -26,5 +26,5 @@ class Task
 end
 
 a = Task.new
-puts a.gets_day_with_max_diff_feeling_from_real_in_night
+puts a.gets_day_with_min_diff_feeling_from_real_in_night
 puts a.gets_day_with_max_light
