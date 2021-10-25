@@ -23,7 +23,7 @@ openweather/requestweather.rb значение константы API_KEY, ст�
 2. bundle install
 3. cd trainee_test
 4. Для запуска 3б задания: bundle exec ruby currency.rb
-5. Для запуска 3а задания: bundle exec ruby openweather/weather.rb
+5. Для запуска примера работы 3а задания: bundle exec  bundle exec ruby run_weather.rb
 
 ## Файл Script.sql
 Вспоминал SQL и делал запросы для выполнения задания 1 и 2 (по sql).
