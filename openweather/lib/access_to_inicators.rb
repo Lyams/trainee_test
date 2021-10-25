@@ -2,16 +2,16 @@
 require_relative 'convertor'
 
 module AccessToIndicators
-  def data_daily_dif_tempeture(data)
+  def data_daily_dif_temperature (data)
     acc = []
-    fiveday = gets_tempeture_five_night(data)
+    fiveday = gets_temperature_five_night(data)
     fiveday.each_pair do |key, value|
       acc.push(key) if value == (fiveday.values.min)
     end
     {days: acc, diff_tempeture: fiveday.values.min}
   end
 
-  def gets_tempeture_five_night(data)
+  def gets_temperature_five_night(data)
     data_daily_dif = {}
     data['daily'].take(5).each do |day|
       data_daily_dif[(day['dt'])] =
