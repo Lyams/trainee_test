@@ -22,7 +22,7 @@ openweather/requestweather.rb значение константы API_KEY, ст�
 1. git clone https://github.com/Lyams/trainee_test.git
 2. bundle install
 3. cd trainee_test
-4. Для запуска 3б задания: bundle exec ruby currency.rb
+4. Для запуска 3б задания: bundle exec ruby run_currency.rb
 5. Для запуска примера работы 3а задания: bundle exec  bundle exec ruby run_weather.rb
 
 ## Файл Script.sql
