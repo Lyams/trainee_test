@@ -12,11 +12,12 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 require 'vcr'
-
+API_KEY = ENV['OPENWEATHERAPIKEY']
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.configure_rspec_metadata!
+  c.filter_sensitive_data('<APPID>') {API_KEY}
 end
 
 
